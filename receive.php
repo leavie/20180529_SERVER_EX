@@ -7,7 +7,7 @@ session_start();
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <?php
 //連結資料庫
-include("connfile/mysql_connect.inc.php");
+//include("connfile/mysql_connect.inc.php");
 
 echo "string";
 ?>
