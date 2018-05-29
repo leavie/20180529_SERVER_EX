@@ -8,6 +8,8 @@ session_start();
 <?php
 //連結資料庫
 include("connfile/mysql_connect.inc.php");
+
+echo "string";
 ?>
 
 <?php
@@ -24,21 +26,21 @@ if(isset($_POST["Submit"])) {
 		$query_insert .= "'".$_POST["address"]."',";
 		$query_insert .= "'".$_POST["website"]."')";
 		mysql_query($query_insert);
-		
+
 		echo '<script>alert("您已成功新增資料！");</script>';
 		echo '<script>location.href="result.php";</script>';
-	
+
 }
 ?>
-<title>個人名片</title> 
-</head> 
+<title>個人名片</title>
+</head>
 
 <body>
 <form action="receive.php" method="POST" >
 <table width="289" border="1">
   <tr>
     <td width="279"><p align="center"> <b><input type="hidden" name="school" id="school" value="<?php echo $_POST["school"];?>" /><?php echo $_POST["school"];?>
-          
+
     </b><br />
     <strong><input type="hidden" name="college" id="college" value="<?php echo $_POST["college"];?>" /><?php echo $_POST["college"];?> </strong><b>
     </b></p>
@@ -53,12 +55,12 @@ if(isset($_POST["Submit"])) {
         </tr>
         <tr>
           <td><p align="center"><b>TEL：<input type="hidden" name="tel" id="tel" value="<?php echo $_POST["tel"];?>" /><?php echo $_POST["tel"];?></b><b>
-  
+
           </b></p></td>
         </tr>
         <tr>
           <td><p align="center"><b>E-MAIL:<input type="hidden" name="email" id="email" value="<?php echo $_POST["email"];?>" /><?php echo $_POST["email"];?></b><b>
-           
+
           </b></p></td>
         </tr>
         <tr>
