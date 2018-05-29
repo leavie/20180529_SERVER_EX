@@ -2,13 +2,13 @@
 <?php
 //資料庫設定
 //資料庫位置
-$db_server = "localhost";
+$db_server = "localhost:3306";
 //資料庫名稱
 $db_name = "nameacrd";
 //資料庫管理者帳號
 $db_user = "root";
 //資料庫管理者密碼
-$db_passwd = "yourpassward";
+$db_passwd = "ZGrRt5luKn1G";
 
 //對資料庫連線
 if(!@mysql_connect($db_server, $db_user, $db_passwd))
@@ -20,4 +20,4 @@ mysql_query("SET NAMES utf8");
 //選擇資料庫
 if(!@mysql_select_db($db_name))
         die("無法使用資料庫");
-?> 
+?>
